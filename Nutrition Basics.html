@@ -1,0 +1,392 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script type='text/javascript' src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<link rel="stylesheet" href="styles/mystyle.css"/>
+		<title>Campus Smart Food Inc-Nutrition Basics</title>
+     	<script type="text/javascript" >
+			
+			$(document).ready(function(){
+				$("#Carbohydrates").show();
+				$("#Fats").hide();
+				$("#Proteins").hide();
+				$("#Vitamins").hide();
+				$("#Minerals").hide();
+				
+				$("#nutritionCarbohydrate").click(function(){
+					$("#Carbohydrates").show();
+					$("#Fats").hide();
+					$("#Proteins").hide();
+					$("#Vitamins").hide();
+					$("#Minerals").hide();
+				});
+				
+				$("#nutritionFats").click(function(){
+					$("#Carbohydrates").hide();
+					$("#Fats").show();
+					$("#Proteins").hide();
+					$("#Vitamins").hide();
+					$("#Minerals").hide();
+				});
+				
+				$("#nutritionProteins").click(function(){
+					$("#Carbohydrates").hide();
+					$("#Fats").hide();
+					$("#Proteins").show();
+					$("#Vitamins").hide();
+					$("#Minerals").hide();
+				});
+				
+				$("#nutritionVitamins").click(function(){
+					$("#Carbohydrates").hide();
+					$("#Fats").hide();
+					$("#Proteins").hide();
+					$("#Vitamins").show();
+					$("#Minerals").hide();
+				});
+				
+				$("#nutritionMinerals").click(function(){
+					$("#Carbohydrates").hide();
+					$("#Fats").hide();
+					$("#Proteins").hide();
+					$("#Vitamins").hide();
+					$("#Minerals").show();
+				});
+			});
+				
+		</script>
+	</head>
+
+	<body>
+		<div id="Container" >
+			<div id="Header">
+				<h1>Campus Smart Foods Inc.</h1>
+			</div>
+			<div id="Body">
+				<div id="Menu">
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Food Joints</a>
+								<ul>
+									<li><a href="HealthyHut.html">The Healthy Hut</a></li>
+									<li><a href="NaturalNourishment.php">Natural Nourishment</a></li>
+								</ul>
+							</li>
+							<li><a href="Reviews.html">Reviews</a></li>
+							<li><a href="#">Nutrition</a>
+								<ul>
+									<li><a href="Nutrition value.html">Nutritional Values</a></li>
+									<li><a href="#">Basic Nutrition</a></li>
+									<li><a href="Assement tool.html">Assement Tools</a></li>
+							    </ul>
+							</li>
+							<li><a href="My Page.php">My Page</a></li>
+						</ul>
+					</nav>
+						
+				</div>
+				<div id="Content">
+					
+					<div id="nutritionBasics">
+						<h2>Nutritional Basics</h2>
+						<div id="nutritionheader">
+							<!--<p>Understanding to basics </br>leads to healthy choices forever...</p>-->
+						
+							<div id="nutritionMenu">
+								<div id="nutritionCarbohydrate" class="nutritionItem">
+									<h3><u>Carbohydrates</u></h3>
+								</div>
+								<div id="nutritionFats" class="nutritionItem">
+									<h3><u>Fats</u></h3>
+								</div>
+								<div id="nutritionProteins" class="nutritionItem">
+									<h3><u>Proteins</u></h3>
+								</div>
+								<div id="nutritionVitamins" class="nutritionItem">
+									<h3><u>Vitamins</u></h3>
+								</div>
+								<div id="nutritionMinerals" class="nutritionItem">
+									<h3><u>Minerals</u></h3>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="nutritionContent">
+						<div id="Carbohydrates">
+							<div id="imgCarbohydrates">
+								<img  src="images/brown_bread.jpg" align="middle" alt="Brown Bread" width="200" height="200"/>
+							</div>
+							<h2>Carbohydrates</h2>
+							<p><b>Carbohydrates are the body’s primary energy source. Overall, it is recommended that calories from carbohydrates, 
+							specifically complex carbohydrates, make up about half of the calories you consume daily.</b></p>
+
+							<h3>Types of Carbohydrates</h3>
+							<p>Carbohydrates are classified as simple or complex based upon their chemical structure, which affects how quickly the sugar 
+							is digested and absorbed.</p>
+							<p><b>Simple carbohydrates</b> such as fructose in fruit juice or sucrose in table sugar consist of one sugar 
+							molecule or two sugar molecules bonded together. Because they are so small, simple sugars require little digestion and are 
+							rapidly absorbed. Although this can be beneficial for a quick burst of energy, frequent consumption of food beverages 
+							containing simple carbohydrates can contribute to insulin resistance and are often lacking in nutrients.</p>
+
+							<p><b>Complex carbohydrates</b> such as the carbohydrate chains in fiber have three or more sugar molecules and must 
+							be broken down into simple carbohydrates before the body can absorb and metabolize the energy. Foods high in complex 
+							carbohydrates are recommended because they provide sustained energy in a steady manner and are often higher in 
+							nutrients and fiber, which provides additional health benefits.</p>
+
+							<p><b>Refined Carbohydrates</b> such as white flour have been milled to remove bran and germ. Although they contain complex 
+							carbohydrates, many of the benefits have been removed through processing, and most contain added simple carbohydrates, 
+							such as sugar.</p>
+
+							<h3>Food Sources</h3>
+							<p><b>Simple Carbohydrates</b></p>
+								<ul>
+									<li>Table sugar (sucrose)</li>
+									<li>High fructose corn syrup</li>
+									<li>Fruit sugar (fructose)*</li>
+									<li>Milk sugar (lactose)</li>
+								</ul>
+							<p>*While fruit does contain simple sugar, it is also a rich source of other nutrients and should be included in your diet.</p>
+
+							<p><b>Complex Carbohydrates</b></p>
+								<ul>
+									<li>Whole grains such as brown rice, oat, whole wheat, quinoa, whole corn, whole grain pastas and cereals, bulgur, and bran</li>
+									<li>Beans and Legumes</li>
+									<li>Starchy vegetables such as potatoes and corn</li>
+									<li>Other vegetables also contain complex carbohydrate, just in smaller amounts, when compared to more starchy vegetables</li>
+								</ul>	
+									
+								<p><b>Refined Carbohydrates</b></p>
+									<ul>
+										<li>White bread</li>
+										<li>Pasta</li>
+										<li>Baked goods with white flour</li>
+										<li>White rice</li>
+									</ul>
+								<h3>Function</h3>
+								<p>Glucose is critical for all body cells and needs to be in constant supply in the blood stream.</p>
+
+								<p>Carbohydrates break down into glucose, are absorbed into the bloodstream and then are transported throughout the body. 
+								Blood glucose levels rise after a meal and then fall back after the glucose is delivered to the cells.</p>
+
+								<p>Once the immediate needs of the body have been met, excess glucose is stored in the liver as glycogen. T
+								his serves as an "emergency reserve in case blood glucose levels drop too low, but it can only sustain the body 
+								for less than one day." When the body is unable to maintain steady glucose levels, diabetes develops. Maintaining 
+								diabetics' glucose levels usually requires various hormones, such as insulin and glucagon.</p>
+						</div>
+						<div id="Fats">
+							<h2>Fats</h2>
+								<div id="imgFat">
+									<img  src="images/oil.jpg" align="middle" alt="Oil" width="200" height="200"/>
+								</div>
+							<p><b>Contrary to popular belief that "fat is bad," fat is essential for our bodies to survive. 
+							Critical vitamins our bodies need depend on fat for absorption and transport. Fat also gives our brains 
+							cues that let us know when we are full.</b></p>
+
+							<h3>Types of Fats</h3>
+							<p>All fats are not created equal. There are many structural differences in individual fats, and it’s good to make a few distinctions.</p>
+
+							<p><b>Unsaturated Fats</b> are found primarily in plant foods and are good for heart health and cholesterol levels. Unsaturated fats also 
+							include Omega-3s, a fat group that is essential to heart health.</p>
+
+							<p><b>Saturated Fats</b> are often found in animal products and can raise your "bad" cholesterol levels and 
+							increase the risk of heart disease.</p>
+
+							<p><b>Trans Fats</b> occur as a result of a process called "hydrogenation" resulting in qualities that are desirable in food manufacturing 
+							such as a higher melting point or a longer shelf life. However, trans fats increase the risk of coronary heart disease. 
+							Health authorities recommend that consumption of trans fat be reduced to trace amounts.</p>
+
+							<h3>Food Sources</h3>
+							<p><b>Unsaturated Fat</b></p>
+								<ul>
+									<li>Plant oils such as olive, canola, and soy</li>
+									<li>Avocados</li>
+									<li>Nuts, seeds, and their oils</li>
+									<li>Fish, including salmon and sardines</li>
+								</ul>
+							<p><b>Saturated Fat</b></p>
+								<ul>
+									<li>Most meats*</li>
+									<li>Dairy products (except non-fat)</li>
+									<li>Tropical oils including palm and coconut</li>
+								</ul>
+							<p>*Most animal products have both saturated and unsaturated fat. Grass-fed beef has a higher ratio of unsaturated fat 
+							than beef fed a grain-based diet.</p>
+
+							<p><b>Trans Fat</b></p>
+								<ul>
+									<li>Many packaged snack foods</li>
+									<li>Many fried foods</li>
+									<li>Many commercial baked goods</li>
+									<li>Most margarine and shortening</li>
+								</ul>
+							<p>Look for the words hydrogenated or partially hydrogenated on nutrition labels. Trans fats must be 
+							labeled as such, making them easier to avoid.</p>
+
+							<h3>Function</h3>
+							<p><b>Fat is critical to the absorption of nutrients, brain function and heart health. Fat also sends satiety cues to 
+							our brains that tell us we are full, and provides the body with cushion and insulation and provides flavor to our foods.</b></p>
+
+							<p>Overall, fats should comprise about 30 percent of the calories you consume daily, mostly in the form of healthy 
+							unsaturated fats. Trans fats should be avoided.</p>
+						</div>
+						<div id="Proteins">
+							<h2>Protein</h2>
+							<div id="imgProtein">
+								<img  src="images/protein.jpg" align="middle" alt="Protein" width="200" height="200"/>
+							</div>
+							<p><b>Protein is essential because it provides structure for many parts of the body. Our bones, skin and hair are made 
+							of collagen—a mix of proteins and minerals. Protein is also vital for maintaining lean body muscle and provides energy 
+							for the body.</b></p>
+
+							<h3>Food Sources</h3>
+							<p>Protein from animal sources is almost always “complete protein”, which means that the food contains all nine 
+							essential amino acids. Although vegetal sources of protein are usually lacking in one or more essential amino acids, 
+							or incomplete, it is possible to obtain all of the essential amino acids needed by eating a variety of vegetal sources 
+							of protein. It is also important to keep in mind that vegetal sources of protein such as beans and legumes, nuts, and 
+							whole grains, are often accompanied by other healthy nutrients and fiber.</p>
+
+							<p><b>Animal Food Sources of Protein</b></p>
+								<ul>
+									<li>Meat, fish, poultry</li>
+									<li>Eggs</li>
+									<li>Dairy products</li>
+								</ul>
+							<p><b>Vegetal Food Sources of Protein</b></p>
+								<ul>
+									<li>Beans and legumes</li>
+									<li>Nuts</li>
+									<li>Whole grains</li>
+									<li>Soy products (complete protein)</li>
+									<li>Vegetables (minimal amounts of protein)</li>
+								</ul>
+							<p><b>Complementary Proteins</b></p>
+
+							<p>When two sources of vegetal protein are lacking in different amino acids, but together provide all nine essential 
+							amino acids, they are considered to be “complementary.” Complementary proteins do not have to be consumed at the same 
+							time to provide the benefits of all nine essential amino acids.</p>
+
+							<p><b>Examples of Complementary Proteins</b></p>
+								<ul>
+									<li>Beans and rice</li>
+									<li>Nut butter on toast</li>
+									<li>Hummus with pita bread</li>
+								</ul>
+							<h3>Function</h3>
+							<p><b>Proteins are composed of amino acids, the "building blocks" of protein.</b></p>
+
+							<p>There are about 20 amino acids with almost half of them considered "essential." This means that the body can't produce 
+							them, so they need to be obtained through food. The proteins eaten at each meal do not get directly used by the body. 
+							Instead, they are digested and broken down into amino acids that are absorbed and transported throughout the body. 
+							Individual amino acids are then used to build the body's essentials, ranging from enzymes and hormones to 
+							collagen and antibodies.</p>
+
+							<p>About 20% of your daily calories should come from protein.</p>
+						</div>
+						<div id="Vitamins">
+							<h2>Vitamins</h2>
+							<div id="imgVitamin">
+								<img  src="images/vitamins.jpg" align="middle" alt="Vitamins" width="200" height="200"/>
+							</div>
+							<p><b>Vitamins are organic compounds obtained from plants and animals that are required in small amounts.</b></p>
+
+							<h3>Types of Vitamins</h3>
+							<p><b>Water-soluble vitamins</b> include all B vitamins (thiamin, riboflavin, niacin, B6, B12), vitamin C and folate. 
+							They are essential for many metabolic processes to occur. By definition, water-soluble vitamins can exist freely in 
+							water so once food is digested, they are absorbed right into the bloodstream and transported to cells throughout the body.</p>
+
+							<p><b>Fat-soluble vitamins</b> include vitamins A, D, E and K. They cannot exist freely in water, but need certain 
+							carriers (lipoproteins) for transport in the blood to various parts of your body. They are then stored in fat cells 
+							throughout your body and used when needed.<p>
+
+							<h3>Food Sources</h3>
+								<ul>
+									<li>Fresh fruits and vegetables of many colors and types</li>
+									<li>Whole grains, legumes, nuts and healthy oils</li>
+								</ul>
+							<h3>Function</h3>
+							<p>Vitamins are essential for the function of practically every organ in the body.</p>
+
+							<p>Whether absorbed directly from foods, or stored by the body for later use, vitamins are a critical part of a 
+							balanced diet. The body can't make vitamins. Different foods contain different vitamins, so it's essential to 
+							consume a variety of healthy foods.</p>
+						</div>
+						<div id="Minerals">
+						<h2>Minerals</h2>
+							<div id="imgMinerals">
+								<img  src="images/minerals.jpg" align="middle" alt="Minerals" width="200" height="200"/>
+							</div>
+							<p><b>Minerals are inorganic compounds required in small amounts that are obtained in foods by way of water and soil. 
+							Minerals are as important to our diet as vitamins. Each one has a specific job to perform—from cellular functions to 
+							building our teeth and bones.</b></p>
+
+							<h3>Types of Minerals</h3>
+							<p><b>Major minerals</b> that are found in large quantities in our bodies include calcium, phosphorous, sodium and potassium.</p>
+
+							<p><b>Trace minerals</b> are found only in minute quantities and include iron, zinc, copper, iodine and selenium.</p>
+
+							<h3>Food Sources</h3>
+							<p><b>Calcium</b></p>
+								<ul>
+									<li>Vegetables-  dark leafy greens, broccoli</li>
+									<li>Fruit- oranges, papaya</li>
+									<li>Nuts and seeds</li>
+									<li>Beans and legumes</li>
+									<li>Dairy products- (milk, yogurt, cheese)</li>
+									<li>Fish with soft bones</li>
+									<li>Fortified soy products</li>
+								</ul>
+							<p><b>Phosphorus</b></p>
+								<ul>
+									<li>Dairy products (milk, yogurt, cheese)</li>
+									<li>Meat, poultry and fish</li>
+									<li>Eggs</li>
+									<li>Nuts</li>
+								</ul>
+							<p><b>Iron</b></p>
+								<ul>
+									<li>Meat, poultry, fish, shellfish</li>
+									<li>Beans, lentils, pumpkin seeds</li>
+									<li>Enriched breads and cereals</li>
+									<li>Green leafy vegetables</li>
+								</ul>
+							<p><b>Potassium</b></p>
+								<ul>
+									<li>Fruits and vegetables</li>
+									<li>Yogurt and dairy products</li>
+									<li>Legumes</li>
+									<li>Fish</li>
+								</ul>
+							<p><b>Sodium</b></p>
+
+							<p>Americans should reduce their sodium intake  to less than 2,300mg per day, or less than 1,500mg per day for individuals 
+							age 51 and older, those with hypertension, diabetes, or chronic kidney disease, and African Americans</p>
+
+							<h3>Function</h3>
+							<p>Minerals help with both bone formation and the maintenance of healthy fluid and electrolyte balance.</p>
+
+							<p>Minerals form the building blocks of strong bones and play a role in transmitting nerve impulses. 
+							Some minerals play a part in the manufacture of the body’s hormones and are needed to maintain a normal heartbeat.</p>
+
+							<p>When people don't get enough of critical minerals, they can have health problems. For instance, too little calcium 
+							can lead to weaker bones, and too little potassium can lead to poor muscle function One exception is sodium, which is linked 
+							with cardiovascular problems and should be consumed in limited amounts. Most people don't need mineral supplements if they eat 
+							a nutritious diet.</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+		</div>
+		<div id="footer" class="footer">
+				<p>Copyright@ Team C</p>
+		</div>
+	</body>
+</html> 

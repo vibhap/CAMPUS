@@ -1,0 +1,136 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<script type='text/javascript' src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<link rel="stylesheet" href="styles/Signup.css"/>
+	<link rel="stylesheet" href="styles/mystyle.css"/>
+	<title></title>
+	<style>
+	#graph_div
+	{
+		padding-top:30px;
+		padding-left:30px;
+		height:600px;
+		align:center
+	}
+	h3
+	{
+		padding-top:50px;
+		padding-left:130px;
+		background-color:#818D19;
+		margin-top:50px;
+		height:50px;
+		color:white;
+	}
+	</style>
+	<script type="text/javascript" ></script>
+	<script type='text/javascript' src="signup.js" ></script> 	
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+	
+	google.load("visualization", "1", {packages:["corechart"]});
+	google.setOnLoadCallback(drawChart);
+	
+	function drawChart() {
+		
+		var geturl = "calorieData.php";
+		$.ajax({
+			type : "GET",
+			url : geturl,
+			dataType : "html",
+			success: function(data) {
+				debugger;
+			//alert("inside function");
+			if (data == "nodata") {
+				alert("We do not have any calorie data.");
+				return;
+			}
+			
+			if (data == "notloggedin") {
+				alert("You need to login to view your calorie consumption ");
+				return;
+			}
+			
+			var arrayOfObjects = eval(data);
+			var data = google.visualization.arrayToDataTable(arrayOfObjects);
+
+			var options = {
+				curveType: "function",
+				width:700,height:500,
+				title: 'Calorie Consumption',
+				hAxis: {title: 'Week', titleTextStyle: {color: 'Blue'}},
+				vAxis: {title: 'Calories per week',titleTextStyle: {color:'Blue'}}
+			};
+
+			var chart = new google.visualization.LineChart(document.getElementById('graph_div'));
+			chart.draw(data, options);
+		},
+		error : function() {
+			alert("Sorry, your Calorie consumption data is not available at this time ");
+		}
+	});
+		
+		
+		
+
+	}
+	
+	
+	</script>
+</head>
+
+<body>
+	<div id="Container" >
+		<div id="Header">
+			
+			<h1>Campus Smart Foods Inc.</h1>
+			
+		</div>
+		<div id="Body">
+			<div id="Menu">
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Food Joints</a>
+							<ul>
+								<li><a href="HealthyHut.html">The Healthy Hut</a></li>
+								<li><a href="NaturalNourishment.php">Natural Nourishment</a></li>
+							</ul>
+						</li>
+						<li><a href="Reviews.html">Reviews</a></li>
+						<li><a href="index.html">Nutrition</a>
+							<ul>
+								<li><a href="Nutrition value.html">Nutritional Values</a></li>
+								<li><a href="Nutrition Basics.html">Basic Nutrition</a></li>
+								<!--<li><a href="#">Food Proportion</a></li>-->
+								<li><a href="Assement tool.html">Assement Tools</a></li>
+								<!--<li><a href="#">Useful Resources</a></li>-->
+							</ul>
+						</li>
+						<li><a href="My Page.php">My Page</a></li>
+					</ul>
+				</nav>
+				
+			</div>
+			<div id="Content">
+				<div id="calorietracking">
+					<h3> My Calorie tracker!! </h3>
+					<div id="graph_div" style="width=900px" ></div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+	</div>
+	<div id="footer" class="footer">
+		<p>Copyright@ Team C</p>
+	</div>
+</body> 
+</html> 
+

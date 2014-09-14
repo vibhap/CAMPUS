@@ -1,0 +1,207 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<script type='text/javascript' src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet" href="styles/mystyle.css"/>
+	<link rel="stylesheet" href="styles/tablestyle.css"/>
+	<title>Campus Smart Food Inc-Assement Tools</title>
+	<script type="text/javascript" >
+	function mod(div,base) {
+		return Math.round(div - (Math.floor(div/base)*base));
+	}
+
+	function calcBmi() {
+		var w = document.getElementById("weight").value * 1;
+		var HeightFeetInt = document.getElementById("htf").value * 1;
+		var HeightInchesInt = document.getElementById("hti").value * 1;
+		HeightFeetConvert = HeightFeetInt * 12;
+		h = HeightFeetConvert + HeightInchesInt;
+		displaybmi = (Math.round((w * 703) / (h * h)));
+		var rvalue = true;
+		
+		if ( (w <= 35) || (w >= 500) || (h <= 48) || (h >= 120) ) {	
+			alert ("Invalid data. Please check and re-enter!");
+			rvalue = false;
+		}
+		
+		if (rvalue) {
+			if (HeightInchesInt > 11) {
+				reminderinches = mod(HeightInchesInt,12);
+				document.getElementById("hti").value = reminderinches;
+				document.getElementById("htf").value = HeightFeetInt + ((HeightInchesInt - reminderinches)/12);
+				document.getElementById("answer").value = displaybmi;
+			}
+			document.getElementById("answer").value = displaybmi; 
+		}
+		return rvalue;
+	}
+	</script>
+</head>
+
+<body>
+<div id="Container" >
+	<div id="Header">
+		
+		<h1>Campus Smart Foods Inc.</h1>
+		
+	</div>
+	<div id="Body">
+		<div id="Menu">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Food Joints</a>
+						<ul>
+							<li><a href="HealthyHut.html">The Healthy Hut</a></li>
+							<li><a href="NaturalNourishment.php">Natural Nourishment</a></li>
+						</ul>
+					</li>
+					<li><a href="Reviews.html">Reviews</a></li>
+					<li><a href="#">Nutrition</a>
+						<ul>
+							<li><a href="Nutrition value.html">Nutritional Values</a></li>
+							<li><a href="Nutrition Basics.html">Basic Nutrition</a></li>
+							<li><a href="#">Assement Tools</a></li>
+						</ul>
+					</li>
+					<li><a href="My Page.php">My Page</a></li>
+				</ul>
+			</nav>
+			
+		</div>
+		<div id="Content">
+			<h2>Body Mass Index (BMI)</h2>
+			<p>BMI is a convenient, commonly used tool that measures weight relative to height and is an indicator of total body fat. 
+				The amount of body fat is, in turn, related to your risk of developing certain diseases.</p>
+
+				<h3>Limitations of BMI</h3>
+				<p>Since it’s solely based on body weight, the BMI measurement does not differentiate between fat and muscle. 
+					For this reason, if you’re an athlete or you have a muscular build, your BMI value may indicate that you’re overweight 
+					or obese when in reality, you may have little body fat and a lot of muscle, which is beneficial to health. On the contrary, 
+					for those who have lost muscle mass (such as older persons or people with injuries), BMI may underestimate the amount of body fat.</p>
+
+					<p>Also, as stated previously, keep in mind that BMI is only one measurement used to determine health risk and should be 
+						considered within the context of the entire health assessment profile.</p>
+
+						<p>Use this form to calculate your body mass index (BMI).</p>
+						
+						<div>
+							
+							<table width=300 border=0 class="cafetable">
+								<tr>
+									<td align=left><B>Weight:</B><input type=text id="weight" SIZE=3 maxlength=3> lbs.</td>
+								</tr>
+								<tr>
+									<td align=left><B>Height:</B><input type=text id="htf" size=1 maxlength=1> Ft.<input type=text id="hti" size=2 maxlength=2> In.</td>
+								</tr>
+								<tr>
+									<td align=center><input type=button value="Calculate BMI" onclick="calcBmi()"></td>
+								</tr>
+								<tr>
+									<td><B>Body Mass Index</B><input type=text id="answer" size=3></td>
+								</tr>
+							</table>
+							
+						</div>
+						
+						<p>Remember that health cannot be determined by one tool alone, but a combination of factors contributes to overall health status.</p>
+
+						<h3>Interpreting your BMI</h3>
+						<p>The BMI measures your weight relative to your height and is an indicator of total body fat. 
+							The amount of body fat is, in turn, related to your risk of developing certain diseases.</p>
+
+							<p>Using the chart below, find in which range your BMI falls and check the corresponding weight status.</p>
+							<table class="cafetable">
+								<tr>
+									<th>BMI</th>
+									<th>Weight Status</th>
+								</tr>
+								<tr>
+									<td>Below 18.5</td>
+									<td>Underweight</td>
+								</tr>
+								<tr>
+									<td>18.5 – 24.9</td>
+									<td>Normal</td>
+								</tr>
+								<tr>
+									<td>25.0 – 29.9</td>
+									<td>Overweight</td>
+								</tr>
+								<tr>
+									<td>30.0 and above</td>
+									<td>Obese</td>
+								</tr>
+							</table>
+							
+							
+
+							<p><b>Underweight</b></p>
+
+							<p>Being underweight or severely underweight (BMI below 18.5) is a health risk because it may indicate that your 
+								body is not receiving adequate nutrition. If you are having any difficulty eating or digesting, or experiencing 
+								disordered eating, you should consult your healthcare provider.<p>
+
+								<p><b>Normal</b></p>
+
+								<p>Your BMI indicates that you are at a healthy weight for your height. Practicing good nutrition and being physically 
+									active are key lifestyle practices to help prevent future weight gain.<p>
+
+									<p><b>Overweight and Obese</b></p>
+
+									<p>According to your BMI, you are carrying excess weight, which increases your risk for various diseases and 
+										health conditions including:</p>
+										<ul>
+											<li>Hypertension (high blood pressure)</li>
+											<li>Type 2 diabetes</li>
+											<li>Heart disease</li>
+											<li>Stroke</li>
+											<li>Gallbladder disease</li>
+											<li>Osteoarthritis</li>
+											<li>Sleep apnea and respiratory problems</li>
+											<li>Certain cancers (breast and colon)</li>
+										</ul>
+										<p>Losing weight will help decrease this risk. Even a slight weight loss — such as 10% of your current weight — 
+											will significantly decrease your risk of developing these health conditions.</p>
+
+											<h3>Waist Circumference</h3>
+											<p>Measuring waist circumference helps screen for health risks associated with overweight and obesity. If most of your fat 
+												is deposited around your waist rather than at your hips, you are at a higher risk.</p>
+
+												<h3>Interpreting Your Waist Circumference</h3>
+												<p>Health Risk Increases When Waist Circumference is:</p>
+												<ul>
+													<li>Women: Greater than 35 inches</li>
+													<li>Men: Greater than 40 inches</li>
+												</ul>
+												<p>To measure your waist circumference, stand and place a tape measure around your waist above your hipbones, right after you breathe out.</p>
+
+												<h3>Other Risk Factors</h3>
+												<p>Along with overweight or obesity and waist circumference, the following factors will put you at a greater risk for 
+													conditions such as heart disease, type II diabetes, and certain cancers. Please consult your healthcare provider for more information.</p>
+													<ul>
+														<li>High blood pressure</li>
+														<li>Cholesterol profile: High LDL cholesterol and low HDL cholesterol</li>
+														<li>High triglycerides</li>
+														<li>High blood glucose</li>
+														<li>Family history of chronic disease</li>
+														<li>Physical inactivity</li>
+														<li>Smoking</li>
+													</ul>
+
+												</div>
+												
+											</div>
+											
+											
+										</div>
+										<div id="footer" class="footer">
+											<p>Copyright@ Team C</p>
+										</div>
+									</body>
+									</html> 
+

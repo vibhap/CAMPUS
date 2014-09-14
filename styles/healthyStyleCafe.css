@@ -1,0 +1,141 @@
+#glutenfree1_hh, #vegan1_hh, #regular1_hh{
+	padding-left:15px;
+	}
+#cardnodiv_hh,#glutenfree1_hh,#vegan1_hh,#regular1_hh,#buttons_hh,#cardtitle_hh,#discountDiv_hh,#deliveryControl_hh,#building_hh,#ordersummary_hh,#cafename_hh
+{
+	position:relative;
+}
+#deliveryControl_hh
+{
+	height:150px;
+	/*width:700px;*/
+	margin-top:110px;
+	text-align:center;
+}
+#cafename_hh
+{
+	height:70px;
+}
+#cafetitle_hh
+{
+	
+	background-image: url('../images/headerImage.png');
+	height:142px;
+	
+}
+#cardtitle_hh
+{
+	position:relative;
+	padding-left:500px;
+	height:20px;
+
+	
+}
+#cardnodiv_hh
+{
+	height:40px;
+	padding-right:30px;
+	position:relative;
+	padding-bottom:20px;
+	
+	
+}
+
+#discountDiv_hh{
+	position:realtive;
+	text-align:center;
+	height:210px;
+	/*padding-top:20px;*/
+	margin-top:145px;
+}
+
+
+#building_hh
+{
+	margin-top:140px;
+	height:500px;
+	width:700px;
+	position:realtive;
+	text-align:center;
+}
+#building_hh p
+{
+	font-size:20px;
+}
+#glutenfree1_hh
+{
+	height:auto;/*280px;*/
+}
+#vegan1_hh
+{
+	margin-top:80px;
+	height:auto;/*230px;*/
+}
+#regular1_hh
+{
+	height:350px;
+	margin-top:80px;
+}
+#buttons_hh
+{
+	height:50px;
+}
+#confirmbutton_hh
+{
+	height:30px;
+	padding-top:15px;
+}
+#ordersummary_hh
+{
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:10px;
+	height:auto;
+	text-align:left;
+	border:2px solid white;
+	width:450px;
+	margin-top:140px;
+	margin-left:115px;
+	margin-bottom:15px;
+	
+}
+#totalordersummary_hh
+{
+	height:300px;
+	text-align:center;
+}
+#totalcost1_hh
+{
+	padding-top:15px;
+}
+##totalorder_hh
+{
+	height:auto;
+}
+#discountprice_hh,#totalcalories_hh,#deliverytime_hh,#deliveryaddress_hh,#deliverycharges_hh,#remainingbalance_hh
+{
+	height:15px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+#confirmorder_hh
+{
+	margin-top:140px;
+	height:300px;
+	text-align:center;
+	
+}
+#cafecontent_hh
+{
+	height:auto;
+	text-align:justify;
+	padding-left:15px;
+	margin-top:90px;
+	padding-top:50px;
+}
+.images_hh{
+float:left;
+height:150px;
+margin:10px;
+}

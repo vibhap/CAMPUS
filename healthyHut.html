@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script type='text/javascript' src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<link rel="stylesheet" href="styles/healthyStyle.css"/>
+		<link rel="stylesheet" href="styles/healthyStyleCafe.css"/>
+		
+		<title>The Healthy Hut</title>
+		<!--<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/questions.js"></script>-->
+		 <script type='text/javascript' src="javascript/HealthyHut.js" ></script> 
+		<script type="text/javascript" >
+			
+			
+		</script>
+	</head>
+
+	<body onload="initialize()">
+		<div id="Container" >
+			<div id="Header">
+				
+				<h1>Campus Smart Foods Inc.</h1>
+				
+			</div>
+			<div id="Body">
+				<div id="Menu">
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Food Joints</a>
+								<ul>
+									<li><a href="#">The Healthy Hut</a></li>
+									<li><a href="NaturalNourishment.php">Natural Nourishment</a></li>
+								</ul>
+							</li>
+							<li><a href="Reviews.html">Reviews</a></li>
+							<li><a href="index.html">Nutrition</a>
+								<ul>
+									<li><a href="Nutrition value.html">Nutritional Values</a></li>
+									<li><a href="Nutrition Basics.html">Basic Nutrition</a></li>
+									<li><a href="Assement tool.html">Assement Tools</a></li>
+									<!--<li><a href="#">Useful Resources</a></li> -->
+								</ul>
+							</li>
+							<li><a href="My page.php">My Page</a></li>
+						</ul>
+					</nav>
+						
+				</div>
+				<div id="Content_hh">
+					<div id="cafename_hh" style="background-color:white;">
+						<div id="cafetitle_hh">
+							<h1>The Healthy Hut</h1>
+						</div>
+						<div id="cardtitle_hh">
+							<h4>Enter your Card No:</h4>
+						</div>
+						<div id="cardnodiv_hh" style="float:right;">
+							<button type = "button" id="b1" class = "button"  onclick="getmealPreference()"> Meal Preference</button>
+							<input type = "text" id="cardno" name="cardno" size="4"/>
+						</div>
+					</div>
+					<div id="cafecontent_hh">
+						<p><span style="font-size:25px">O</span>ur Cafe's mission is to promote the well being of people and planet, and provide an avenue to support healthy choices 
+						and sustainable practices.Everything we serve is made with exclusively 100% organic and local ingredients. </p>
+						<p>Our produce is seasonal from around the bay area, often picked only days before being served. 
+						Our poultry is free range and organic.Almost everything served is made from 
+						scratch in our kitchens to ensure freshness and quality.</p>
+						<p><b>PLEASE ENTER YOUR ACCESS CARD NUMBER TO ACCESS OUR MENU.</b></p>
+							<p><img class="images_hh" src="images/contentImage1.png" alt="Organic food" width="200" height="150"></p>
+							<img class="images_hh" src="images/contentImage2.png" alt="Organic food" width="200" height="150">
+							<img class="images_hh" src="images/contentImage3.png" alt="Organic food" width="200" height="150">
+					</div>
+					<!--<div id="apporachPoints">-->
+						<div id = "cafe_hh">
+							<div id="glutenfree1_hh">
+							<table>	
+								<tr>
+									<th>Item</th>
+									<th>Calories</th>
+									<th>&nbsp;&nbsp;Food Type</th>
+									<th>&nbsp;&nbsp;Price</th>
+									<th>&nbsp;&nbsp;&nbsp;&nbsp;Quantity</th>
+								</tr>
+								<tr>
+									<td><b>Banana Pecan waffles</b><br/>
+										<span style="font-size:11px">(Two waffles with fresh slices of Bananas, Pecans and wipped cream)</span></td>
+									<td>350</td>
+									<td>&nbsp;&nbsp;Gluten Free</td>
+									<td>&nbsp;&nbsp;$6.00</td>
+									<td> &nbsp;&nbsp;&nbsp;&nbsp;<input type = "text" id = "m1" name = "Banana" size ="2"/></td>
+								</tr>
+								<tr>
+									<td><b>Bluberry Corn muffins</b><br/>
+										<span style="font-size:11px">(Blueberry Muffins with cornmeal, brown sugar and crumb baked icing)</span></td>
+									<td>220</td>
+									<td>&nbsp;&nbsp;Gluten Free</td>
+									<td>&nbsp;&nbsp;$3.00</td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;<input type =  "text" id = "m2" name = "Blueberry" size ="2"/></td>
+								</tr>
+								<tr>
+									<td><b>Penne Rigate Pomodoro</b><br/>
+										<span style="font-size:11px">(Pasta with Roma tomatoes,gralic and fresh basil.)</span></td>
+									<td>490</td>
+									<td>&nbsp;&nbsp;Gluten Free</td>
+									<td>&nbsp;&nbsp;$9.00</td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;<input type =  "text" id = "m3" name = "Penne" size ="2"/></td>
+								</tr>
+								<tr>
+									<td><b>Pumpkin cheesecake</b><br/>
+										<span style="font-size:11px">(Pumpkin, cinnamon, nutmeg and ginger with cheesecake.)</span></td>
+									<td>300</td>
+									<td>&nbsp;&nbsp;Gluten Free</td>
+									<td>&nbsp;&nbsp;$3.00</td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;<input type =  "text" id = "m4" name = "Pumpkin" size ="2"/></td>
+								</tr>
+								<tr>
+									<td><b>Soda</b><br/>
+										<span style="font-size:11px">(Coke, Diet Coke, Mountain Dew, Pepsi, Fanta)</span></td>
+									<td>160</td>
+									<td>&nbsp;&nbsp;Gluten Free</td>
+									<td>&nbsp;&nbsp;$1.00</td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;<input type =  "text" id = "m5" name = "Soda" size ="2"/></td>
+								</tr>
+								</table> 
+							</div>
+							<div id="vegan1_hh">
+								<table>	
+								<tr>
+									<th>Item</th>
+									<th>Calories</th>
+									<th>&nbsp;&nbsp;Food Type</th>
+									<th>&nbsp;&nbsp;Price</th>
+									<th>&nbsp;&nbsp;&nbsp;&nbsp;Quantity</th>
+								</tr>
+								<tr>
+									<td><b>Almond Butter Toast</b><br/>
+										<span style="font-size:11px">(Two slices of toasted bread with Almond Butter.)</span></td>
+									<td>250</td>
+									<td>&nbsp;&nbsp;Vegan</td>
+									<td>&nbsp;&nbsp;$2.00</td>
+									<td> &nbsp;&nbsp;&nbsp;&nbsp;<input type = "text" id = "m6" name = "Almond" size ="2"/></td>
+								</tr>
+								<tr>
+									<td><b>Pad Thai with tofu</b><br/>
+										<span style="font-size:11px">(Stir fry noodles with tofu and veggies)</span></td>
+									<td>500</td>
+									<td>&nbsp;&nbsp;Vegan</td>
+									<td>&nbsp;&nbsp;$11.00</td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;<input type =  "text" id = "m7" name = "PadThai" size ="2"/></td>
+								</tr>
+								<tr>
+									<td><b>Chocolate Bundt cake</b><br/>
+										<span style="font-size:11px">(A rich dense choclate cake.)</span></td>
+									<td>300</td>
+									<td>&nbsp;&nbsp;Vegan</td>
+									<td>&nbsp;&nbsp;$3.00</td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;<input type =  "text" id = "m8" name = "Bundt" size ="2"/></td>
+								</tr>
+								<tr>
+									<td><b>Lemonade</b><br/>
+										<span style="font-size:11px">(An ice cold refreshing drink made from lemons, water and sugar.)</span></td>
+									<td>150</td>
+									<td>&nbsp;&nbsp;Vegan</td>
+									<td>&nbsp;&nbsp;$1.00</td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;<input type =  "text" id = "m9" name = "Lemonade" size ="2"/></td>
+								</tr>
+								</table> 	
+					 		</div>
+							<div id="regular1_hh">
+								<table>	
+								<tr>
+									<th>Item</th>
+									<th>Calories</th>
+									<th>&nbsp;&nbsp;Food Type</th>
+									<th>&nbsp;&nbsp;Price</th>
+									<th>&nbsp;&nbsp;&nbsp;&nbsp;Quantity</th>
+								</tr>
+								<tr>
+									<td><b>Mushroom & Tomato omlette</b><br/>
+										<span style="font-size:11px">(Mushrooms,onions and swiss chesse with diced tomatoes on top.)</span></td>
+									<td>330</td>
+									<td>&nbsp;&nbsp;Regular</td>
+									<td>&nbsp;&nbsp;$8.00</td>
+									<td> &nbsp;&nbsp;&nbsp;&nbsp;<input type = "text" id = "m10" name = "Mushroom" size ="2"/></td>
+								</tr>
+								<tr>
+									<td><b>Veggie Burger</b><br/>
+										<span style="font-size:11px">(Veggie patty topped with tomatoes and a side of potato fries.)</span></td>
+									<td>540</td>
+									<td>&nbsp;&nbsp;Regular</td>
+									<td>&nbsp;&nbsp;$9.00</td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;<input type =  "text" id = "m11" name = "Burger" size ="2"/></td>
+								</tr>
+								<tr>
+									<td><b>Indian Veg Biriyani</b><br/>
+										<span style="font-size:11px">(Veggies cokked with rice and spices.)</span></td>
+									<td>550</td>
+									<td>&nbsp;&nbsp;Regular</td>
+									<td>&nbsp;&nbsp;$6.00</td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;<input type =  "text" id = "m12" name = "Biriyani" size ="2"/></td>
+								</tr>
+								<tr>
+									<td><b>Apple Pie</b><br/>
+										<span style="font-size:11px">(Apple  filling perfumed with cinnamon and a buttery crust.)</span></td>
+									<td>450</td>
+									<td>&nbsp;&nbsp;Regular</td>
+									<td>&nbsp;&nbsp;$3.00</td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;<input type =  "text" id = "m13" name = "Apple" size ="2"/></td>
+								</tr>
+								<tr>
+									<td><b>Hot Chocolate</b><br/>
+										<span style="font-size:11px">(Steamed milk with vanilla- and mocha- flavoured syrups.)</span></td>
+									<td>100</td>
+									<td>&nbsp;&nbsp;Regular</td>
+									<td>&nbsp;&nbsp;$2.00</td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;<input type =  "text" id = "m14" name = "Chocolate" size ="2"/></td>
+								</tr>
+								</table> 
+							</div>
+							<div id="buttons_hh">
+								<button type = "button" class = "button" id="but1" style="float:right" onclick="showDiscountDiv()"> Order </button>
+								<button type = "button" class = "button" id ="but2" style = "float:right" onclick="showOtherItems()"> More Menu Items</button>
+							</div>
+							<div id="deliveryControl_hh">
+								<h3 align="center">Order Options</h3>
+								<button type = "button"  id="but3"  onclick="showRadio()"> Food Delivery </button>
+								<button type = "button"  id ="but4"  onclick="printOrderSummary()"> CheckOut</button>					
+							</div>
+							<div id="discountDiv_hh">
+								<p>Please enter your Card Number to get a discount.</p>
+								<p>Note: For registered members only.</p>
+								<input type="text" id="discountno" size="5"/>
+								<button type="button" class = "button" id="but6" onclick="discount()">Get Discount</button>
+								<p> Non-members! Please click below for delivery options.</p>
+								<button type="button" id="but8" onclick="showDeliveryPreference()">Non Members</button>
+							
+							</div>
+							<div id="building_hh">
+								<p>Please choose your building number for delivery.</p>
+								<input type="radio" id="a1" name="rd" value="1"/>Building no. 1, Room 101<br/><br/>
+								<input type="radio" id="a2" name="rd" value="2"/>Building no. 2, Room 110<br/><br/>
+								<input type="radio" id="a3" name="rd" value="3" />Building no. 3, Room 105<br/> <br/>
+								<input type="radio" id="a4" name="rd" value="4"/>Building no. 4, Room 201<br/> <br/>
+								<input type="radio" id="a5" name="rd" value="5"/>Building no. 5, Room 204<br/> <br/>
+								<input type="radio" id="a6" name="rd" value="6"/>Building no. 6, Room 301<br/><br/>
+								<input type="radio" id="a7" name="rd" value="7"/>Building no. 7, Room 303<br/><br/>
+								<input type="radio" id="a8" name="rd" value="8"/>Building no. 8, Room 103<br/><br/>
+								<input type="radio" id="a9" name="rd" value="9"/>Building no. 9, Room 202<br/><br/>
+								<input type="radio" id="a10" name="rd" value="10"/>Building no. 10, Room 201<br/><br/>
+								<button type = "button" id = "but5" style="width:75px" onclick = "checkRadioValue()"> Ok </button>
+							</div>
+							<div id="ordersummary_hh">
+								<h3><u>Order Summary</u></h3>
+								<div id="d1"></div>
+								<div id="d2"></div>
+								<div id="d3"></div>
+								<div id="d4"></div>
+								<div id="d5"></div>
+								<div id="d6"></div>
+								<div id="d7"></div>
+								<div id="d8"></div>
+								<div id="d9"></div>
+								<div id="d10"></div>
+								<div id="d11"></div>
+								<div id="d12"></div>
+								<div id="d13"></div>
+								<div id="d14"></div>
+								<div id = "totalcost1_hh">
+								</div>
+								<div id ="discountprice_hh">
+								</div>
+								<div id="totalcalories_hh">
+								</div>
+								<div id="deliverytime_hh">
+								</div>
+								<div id="deliveryaddress_hh">
+								</div>
+								<div id="deliverycharges_hh">
+								</div>
+								<div id="remainingbalance_hh">
+								</div>
+								<div id="totalorder_hh">
+								</div>
+								<div id="confirmbutton_hh">
+									<button type="button" id="but7" style="float:right" onclick="confirmOrder()">Confirm</button>
+								</div>
+							</div>
+							<div id = "confirmorder_hh">
+								<p>Your Order has been placed.<br/>Thanks For your order. Please visit us again!</p>
+							</div>
+						</div>
+					<!--</div>-->
+				</div>
+			</div>
+			
+		</div>
+		<div id="footer" class="footer">
+				<p>Copyright@ Team C</p>
+		</div>
+	</body>
+</html> 

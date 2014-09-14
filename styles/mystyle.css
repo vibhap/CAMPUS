@@ -1,0 +1,236 @@
+html,                               /*instructs browser that the content within this page will take 100% of the screen and background with specified color */
+
+body {
+	margin:0;
+	padding:0;
+    height:100%;
+    color:#738000;  				  	/*Font Color*/
+	font-family:"Tahoma";			/*Font family*/
+	font-size:10pt;					/*Font size*/
+					/*Background Color*/
+	padding: 10px;
+	background-image: url('../images/grey-wallpaper.jpeg');
+}
+
+#Container {
+	overflow-y: hidden;
+	overflow-x: hidden;
+	padding-bottom: 30px;
+	height: 100%;
+	height: auto;
+	min-height:100%;
+    background-color:white;
+	width:900px;
+	margin: 0 auto -10px;
+	border: 1px solid #738000;
+	border-radius: 5px;
+	
+	
+}
+#Header {
+	padding-left: 10px;
+	height:70px;					/*Height of header*/
+	border-bottom: 1px solid #738000;
+	line-height: 50px;
+	background-color:white;
+	text-align: left;
+	font-family:"Edwardian Script ITC";
+	font-weight: bold;
+	background-image: url("../images/logo.png");	/*logo in the header*/ 
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#Header h1{
+	font-size:36pt;				/*Header Font size*/
+}
+
+#Menu{
+	
+	width: 20%;					/*width of the element*/
+	float: left;
+	margin: 0;
+	background-color:white;
+	/*border-right: 2px solid #738000;*/
+	text-align: center;
+	font-weight: bold;
+}
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+	font-weight: normal;
+}
+nav ul {
+	background: white; 
+	padding: 0 10px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	
+}
+nav ul:after {
+	content: ""; 
+	clear: both; 
+	display: block;
+}
+nav ul li:hover {
+	background: #E6E6B8; 
+	background: linear-gradient(top, white 0%, #bbbbbb 100%);  
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+}
+nav ul li:hover a {
+	color: #738000;
+}
+
+nav ul li a {
+	display: block; 
+	padding: 15px 30px;
+	color: #738000; 
+	text-decoration: none;
+}
+nav ul ul {
+	background: #E6E6B8; 
+	padding: 0;
+	position: relative; 
+}
+nav ul ul li {
+	float: none; 
+	/*border: 1px solid #6b727c;
+	border-radius: 5px;
+	border-bottom: 1px solid #575f6a;*/
+	position: relative;
+}
+nav ul ul li a {
+	padding: 15px 30px;
+	color: #738000;
+}	
+nav ul ul li a:hover {
+	background: #B8B893;
+	font-weight: bold;
+}
+#Content{
+	width: 75%;				/*Width of the element*/
+	float: left;			/*Floats element to left of relative element*/
+	background-color:white;
+	text-align:justify;
+	padding-right: 1em;
+}
+#footer {
+	width:100%;
+	height:50px;			/*Height of Footer*/
+	text-align:center;
+	clear:both;				/*Moves footer to bottom edge of the floating elements*/
+	background-color:white;
+	width:900px;
+	margin: auto;
+	border: 1px solid #738000;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+} 
+#imgCarbohydrates{
+	float: right;
+	clear: right;
+	padding: 10px;
+}
+#imgFat{
+	float: right;
+	clear: right;
+	padding: 10px;
+}
+#imgProtein{
+	float: right;
+	clear: right;
+	padding: 10px;
+}
+#imgVitamin{
+	float: right;
+	clear: right;
+	padding: 10px;
+}
+#imgMinerals{
+	float: right;
+	clear: right;
+	padding: 10px;
+}
+#nutritionheader{
+	background-color: #818D19;
+	color: white;
+	height: 70px;
+	width: 650px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size: 11pt;
+	line-height: 2;
+	padding-bottom: 5px;
+	padding-left: 20px;
+}
+#apporachPoints{
+	height: 150px;
+	width: 700px;
+	background-color: #818D19;
+	color: white;
+	font-size: 11pt;
+	border: 1px solid #6b727c;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	line-height: 2;
+	
+}
+#imagebar {
+	height: 150px;
+	width: 700px;
+	/*border: 1px solid #818D19;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;*/
+}
+div.img
+{
+  
+  /*border: 1px solid #0000ff;*/
+  height: auto;
+  width: auto;
+  float: left;
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 14px;
+   
+}	
+div.img img
+{
+  display: inline;
+  /*margin: 3px;
+  border: 1px solid #ffffff;*/
+}
+div.desc
+{
+  text-align: center;
+  font-weight: Bold;
+  width: 120px;
+  margin: 2px;
+}
+
+.nutritionItem{
+	float:left;
+	padding-right: 43px;
+	padding-left: 5px;
+}
+.nutritionItem:hover{
+	background-color: #818D19;
+	color: white;
+}
+
+div.nutritionContent{
+	clear: both;
+}
+
+
+#healthyHutinfo{
+	float: left;
+	width: 350px;
+}
+#naturalNourishmentinfo{
+	float:left;
+}

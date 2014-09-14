@@ -1,0 +1,270 @@
+	  
+	#BreakFast  /* main div containing the menu display*/
+	{
+	     position:relative;
+	     height:501px;
+	     width:430px;
+	     background-color:#738000;
+	     color:white;
+	 }
+	 #Orderform /* form containing the delivery and checkout options with discount option*/
+	{
+	     position:relative;
+	     margin-top:13px;
+	     height:538px;
+	     width:430px;
+	     background-color:#738000;
+	     color:white;
+	     text-align:center;
+	     padding-top:20px;
+	     font-size:15px;
+	 }
+	 #deliveryform /* Delivery form to choose location*/
+	 {
+	     position:relative;
+	     margin-top:10px;
+	     padding-top:10px;
+	     font-size:15px;
+	     height:551px;
+	     width:430px;
+	     background-color:#738000;
+	    color:white;
+	    text-align:center;
+	  
+	 }
+	 
+	 #summaryheading
+	 {
+	     padding-top:40px;
+	     font-size:16px;
+	     text-align:center;
+	 }
+	 
+	 #ordersummary
+	 {
+	      position:relative;
+	      margin-top:13px;
+	      height:557px;
+	      width:430px;
+	      background-color:#738000;
+	      color:white;
+	 }
+	 #discount
+	 {
+	      height:100px;
+	      margin-top:100px;
+	 }
+	 
+	 #building /* to display buidling chosen*/
+	 {
+	     margin-top:79px;
+	     height:30px;
+	     text-align:center;
+	     font-size:15px;
+	 }
+	 #cost /* to display total cost*/
+	 {
+	     height:30px;
+	     text-align:center;
+	     font-size:15px;
+	 }
+	 #discountdiv /* to display discount given*/
+	 {
+	     height:30px;
+	     text-align:center;
+	     font-size:15px;
+	 }
+	 #deliverydiv /* to display delivery charge*/
+	 {
+	     height:30px;
+	     text-align:center;
+	     font-size:15px;
+	 }
+	 #time  /* display delivery time*/
+	 {
+	     height:30px;
+	     text-align:center;
+	     font-size:15px;
+	 
+	 }
+	   
+	 #calories   /* display calories*/
+	 {
+	     height:30px;
+	     text-align:center;
+	     font-size:15px;
+	 }
+	 #Moneydue   /*displays the money due*/
+	 {
+	     height:30px;
+	     text-align:center;
+	     font-size:15px; 
+	 }
+	 
+	 
+	 
+	 #cardtitle
+	 {
+	     height:20px;
+	     color:white;
+	 }
+	 
+	 
+	a
+	{
+	     color:white;
+	     text-decoration:none;
+	}
+	h4
+	{
+	     font-size:15px;
+	     padding-top:20px;
+	     padding-bottom:5px;
+	}
+	
+	
+	#b1
+	{
+	     margin-left:75px;
+	}
+	#deliveryform
+	{
+	     color:white;
+	}
+	
+	#budget_title
+	{
+	     height:50px;
+	     width:300px;
+	     margin:5px;
+	     padding-left:200px;
+	     padding-top:10px;
+	}
+	#line
+	{
+	     padding-left:200px;
+	}
+	
+	#Detailsandnumber
+	{
+	     width:685px;
+	     height:107px;
+	     background-color:#738000;
+	     padding-left:40px;
+		 border-style:solid;
+         border-color:white;
+	}
+	#CafeDetails
+	{            
+	     width:400px;
+	     background-color:#738000;
+	     height:30px;
+		 float:left;
+		 color:white;
+		 font-size:14px;
+		 padding-top:20px;
+	}
+	#Cardnumber
+	{    width:279px;
+	     height:102px;
+		 background-color:#738000;
+		 position:relative;
+		float:right;
+		text-align:center;
+		padding-top:7px;
+		color:white;
+	}
+	#cardtitle
+	{
+	   width:270px;
+	   height:20px;
+	   
+	}
+	#enjoy
+	{
+	 padding-top:30px;
+	 text-align:center;
+	 border-radius:40px;
+	
+	}
+  	.products{
+		overflow:auto;
+		height:50px;
+		width:50px;
+	    background-color:#738000;
+		color:white;
+	}
+	.products ul{
+		list-style:none;
+		margin-top:40px;
+		padding:0px;
+		width:50px;
+		color:white;
+		
+	}
+	.products li{
+		display:inline;
+		float:left;
+		margin:10px;
+		border:1px solid white;
+		width:50px;
+		color:white;
+		
+		}
+	.item{
+		display:block;
+		text-decoration:none;
+	  	float:left;
+	  	padding:10px;
+		color:white;
+	}
+	
+	.item img{
+		border:1px solid #333;
+	}
+	.item p{
+		margin:0;
+		font-weight:bold;
+		text-align:center;
+		color:white;
+	}
+	.cart{
+		float:right;
+		position:absolute;
+		width:260px;
+		height:570px;
+		padding:0px 10px;
+		left:410px;
+		margin-left:430px;
+		top:234px;
+		background-color:#738000;
+		color:black;
+		text-align:center;
+		font-size:19px;
+		border-style:solid;
+        border-color:white;
+	}
+	
+	
+	#Content
+	{
+	   background-color:#738000;
+	}
+	
+	
+	#cartcontent
+	{
+	color:black;
+			}
+	
+	.ctitle{
+		text-align:center;
+		color:white;
+		font-size:18px;
+		padding:10px;
+	}
+	
+	.datagrid-body{
+		overflow:hidden !important;
+	}
+	
