@@ -23,3 +23,7 @@ f) Provide a forum for members (members of campus community) to post their
 comments/reviews and suggestions. 
 
 g) Show a visualization of individual spending and nutritional tracking.
+
+
+The web portal is hosted on our school server and the link to this can be found below
+http://students.engr.scu.edu/~vprahlad/CAMPUS/
