@@ -7,13 +7,19 @@ The portal provides the following services:
 ==========================================
 
 a) Provide information about their services.
+
 b) Provide a list of their campus cafes and restaurants (where locally grown food
 is served) to select from.
+
 c) Allow a member of the Campus community to keep track of one’s monthly
 budget.
+
 d) Allow a member of the Campus community to keep track of one’s caloric
 consumption.
+
 e) Provide a form to order food from a café for delivery or pick-up.
+
 f) Provide a forum for members (members of campus community) to post their
 comments/reviews and suggestions. 
+
 g) Show a visualization of individual spending and nutritional tracking.
